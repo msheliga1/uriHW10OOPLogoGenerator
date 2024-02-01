@@ -63,10 +63,10 @@ Use node, inquirer and Object Oriented Inherited classes  to create an SVG log u
 LOGO generator for simple SVG logos 
 
 Command-line inquirer app for input
-Name up to three characters
-Text color keyword (OR a hexadecimal number)
-Shape: circle, triangle, and square
-Shape's color: color keyword (OR a hexadecimal number)
+1. Name up to three characters
+2. Text color keyword (OR a hexadecimal number)
+3. Shape: circle, triangle, and square
+4. Shape's color: color keyword (OR a hexadecimal number)
 SVG file is created named `logo.svg`
 Text "Generated logo.svg" is printed in the command line
 `logo.svg` file in a browser - 300x200 pixel image
