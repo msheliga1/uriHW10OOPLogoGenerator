@@ -2,7 +2,7 @@
 // Include packages needed for this app
 const fs = require('fs');
 const inq = require('inquirer');
-const gm = require('./utils/generateMarkdown');
+const gm = require('./lib/shape');
 const emailVal = require('email-validator');
 
 // TODO: Create a function to write README file
@@ -14,7 +14,8 @@ function writeToFile(fileName, data) {
 // ====== All Init Methods Next =========================
 // TODO: Create a function to initialize app - and call the main inquirer .prompt routine. MJS 1.24.24
 function init() {
-    console.log("Welcome to Mike Sheliga's README.md file generator. \n");
+    console.log("Welcome to Mike Sheliga's SVG LOGO file generator. \n");
+    return; 
     const licenseInfo = initLicenseInfo(); 
     const licenseNameArray = initLicenseNameArray(licenseInfo);
     const questions = initQuestions(licenseNameArray);

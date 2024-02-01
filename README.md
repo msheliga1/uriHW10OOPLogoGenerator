@@ -40,6 +40,8 @@ Use node, inquirer and Object Oriented Inherited classes  to create an SVG log u
         - You may approve your own request.  
     Clone to local machine (Copy https, then git clone paste).    
     Create a nice long READ.md file!!  (Modify prior projects.)   
+    NPM: Do "npm init --y" BEFORE "npm install" to avoide ENOENT err.
+        Do "npm install inquirer@8.2.4" (with old version) to avoid require error.
     Commit and push files back to gitHub/branch. (For multi-programming: Issue pull request, approve, merge).  
     Deploy code (Settings...CodeAndAnimation->Pages on left, GitHub Pages->Branch->main, save)  
         - Deployed code name always msheliga1/github.io/RepoName !!  

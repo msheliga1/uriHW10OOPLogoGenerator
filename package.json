@@ -1,0 +1,19 @@
+{
+  "name": "urihw10ooplogogenerator",
+  "version": "1.0.0",
+  "description": "uri bootcamp HW 10 OOP Shape SVG Logo Generator - MJS Due 2.1.24\r Michael Sheliga - This repo is for the University of Richmond (URI) coding bootcamp.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "email-validator": "^2.0.4",
+    "inquirer": "^8.2.4"
+  }
+}
