@@ -2,7 +2,7 @@
 // Include packages needed for this app
 const fs = require('fs');
 const inq = require('inquirer');
-const gm = require('./lib/shape');
+const Shape = require('./lib/shape.js');
 const emailVal = require('email-validator');
 
 // TODO: Create a function to write README file
@@ -15,9 +15,10 @@ function writeToFile(fileName, data) {
 // TODO: Create a function to initialize app - and call the main inquirer .prompt routine. MJS 1.24.24
 function init() {
     console.log("Welcome to Mike Sheliga's SVG LOGO file generator. \n");
-    return; 
-    const licenseInfo = initLicenseInfo(); 
-    const licenseNameArray = initLicenseNameArray(licenseInfo);
+    const shapeOne = new Shape();  // Must be what you assigned the require to, NOT necessarily the class name.
+    shapeOne.render();
+    return;
+    const licenseNameArray = [];
     const questions = initQuestions(licenseNameArray);
     inq
     .prompt(questions)
