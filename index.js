@@ -4,6 +4,8 @@ const fs = require('fs');
 const inq = require('inquirer');
 const Shape = require('./lib/shape.js');
 const Circle = require('./lib/circle.js');
+const Square = require('./lib/square.js');
+const Triangle = require('./lib/triangle.js');
 const emailVal = require('email-validator');
 
 // TODO: Create a function to write README file
@@ -23,15 +25,16 @@ function init() {
     .then((ans) => {
         // console.log("Beginning .then");
         const shape = createShapeObject(ans);  // create circle, triangle, etc. 
-        const shapeXML = shape.render(ans);
+        const shapeXML = shape.render( );
         let fileXML = '<?xml version="1.0" encoding="UTF-8" standalone="no"?> \n';
         fileXML += '<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">  \n';
-        fileXML += '<svg width="391" height="391" viewBox="-70.5 -70.5 391 391" xmlns="http://www.w3.org/2000/svg" '; 
+        fileXML += '<svg width="400" height="400" viewBox="-70.5 -70.5 400 400" xmlns="http://www.w3.org/2000/svg" '; 
         fileXML += ' xmlns:xlink="http://www.w3.org/1999/xlink">  \n';
         fileXML += shapeXML + ' \n';
+        fileXML += `<text x="75" y="175" font-size="50pt" font-wieght="bold" fill="${ans.color}">${shape.getInitials()}</text> \n`; 
         fileXML += "</svg> \n"; 
         // Great place to output entire file for debugging.
-        console.log("The generated logo.svg data is \n" + shapeXML + "\n");
+        console.log("The rendered logo.svg data is \n" + shapeXML + "\n");
         writeToFile('./examples/logo.svg', shapeXML); 
         console.log("The generated logo.xml data is \n" + fileXML);
         writeToFile('./examples/logo.xml', fileXML); 
@@ -43,6 +46,10 @@ function createShapeObject(ans) {
     let shape = undefined;
     if (ans.shape === "circle") { 
         shape = new Circle(ans.initials, ans.color, ans.bgColor);
+    } else if (ans.shape === "square") { 
+        shape = new Square(ans.initials, ans.color, ans.bgColor);
+    } else if (ans.shape === "triangle") { 
+        shape = new Triangle(ans.initials, ans.color, ans.bgColor);
     } else {
         // const shape = new Shape();  // Must be what you assigned the require to, NOT necessarily the class name.
         shape = new Shape(ans.initials, ans.color, ans.bgColor);
