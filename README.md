@@ -6,7 +6,7 @@ Michael Sheliga - This repo is for the University of Richmond (URI) coding bootc
 Link to GitHub Repo: https://github.com/msheliga1/uriHW10OOPLogoGenerator    
 <!---  Link to deployed github.io site. https://msheliga1.github.io/uriHW9NodeReadmeGen --->  
 Link to logo.svg: https://github.com/msheliga1/uriHW10OOPLogoGenerator/blob/main/examples/logo.svg    
-Bonus Link to html file with SVG!! : https://github.com/msheliga1/uriHW10OOPLogoGenerator/blob/main/examples/logo.html     
+Bonus Link to html file (viewable in firefox) with SVG Logo!! : https://github.com/msheliga1/uriHW10OOPLogoGenerator/blob/main/examples/logo.html     
 Link to Video on Google Drive: https://drive.google.com/file/d/1nLvEaC9at3JhJc0knj-ZJ8N_nNKHrIT9/view?usp=sharing  
 Link to Video on GitHub [Link](./examples/hw10LogoGenSheliga.webm)   Note that this video may be too large to play in GitHub, so you will need to download and play from your computer. WindowsMediaPlayer worked for me.   
 
