@@ -22,22 +22,26 @@ function init() {
     const questions = initQuestions();
     inq
     .prompt(questions)
-    .then((ans) => {
+    .then((ans) => {  // create and write both a pure svg and an html file with the logo..
         // console.log("Beginning .then");
         const shape = createShapeObject(ans);  // create circle, triangle, etc. 
         const shapeXML = shape.render( );
         let fileXML = '<?xml version="1.0" encoding="UTF-8" standalone="no"?> \n';
         fileXML += '<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">  \n';
         fileXML += '<svg width="400" height="400" viewBox="-70.5 -70.5 400 400" xmlns="http://www.w3.org/2000/svg" '; 
+        svgXML = '<svg version="1.1" width="400" height="400" xmlns="http://www.w3.org/2000/svg">';
         fileXML += ' xmlns:xlink="http://www.w3.org/1999/xlink">  \n';
         fileXML += shapeXML + ' \n';
+        svgXML  += shapeXML + ' \n';
         fileXML += `<text x="75" y="175" font-size="50pt" font-wieght="bold" fill="${ans.color}">${shape.getInitials()}</text> \n`; 
+        svgXML  += `<text x="75" y="175" font-size="50pt" font-wieght="bold" fill="${ans.color}">${shape.getInitials()}</text> \n`;
         fileXML += "</svg> \n"; 
+        svgXML  += "</svg> \n"; 
         // Great place to output entire file for debugging.
         console.log("The rendered logo.svg data is \n" + shapeXML + "\n");
-        writeToFile('./examples/logo.svg', shapeXML); 
-        console.log("The generated logo.xml data is \n" + fileXML);
-        writeToFile('./examples/logo.xml', fileXML); 
+        writeToFile('./examples/logo.svg', svgXML); 
+        console.log("The generated logo.html data is \n" + fileXML);
+        writeToFile('./examples/logo.html', fileXML); 
     });
 } // end function init
 
@@ -87,5 +91,3 @@ const myEV = (input) => {
 // =================== Begin the App by Calling Init ======================
 // Function call to initialize app
 init();
-
-// module.exports = createShapeObject;  I think this needs to be in a "module"

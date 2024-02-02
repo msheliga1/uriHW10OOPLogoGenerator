@@ -5,12 +5,10 @@ Michael Sheliga - This repo is for the University of Richmond (URI) coding bootc
 ## Link to Repo, Screenshot(s) and/or Video(s)
 Link to GitHub Repo: https://github.com/msheliga1/uriHW10OOPLogoGenerator    
 <!---  Link to deployed github.io site. https://msheliga1.github.io/uriHW9NodeReadmeGen --->  
-Link to generated README.md: https://github.com/msheliga1/uriHW10OOPLogoGenerator/blob/main/Develop/README.md  
-Link to Video on Google Drive: https://drive.google.com/file/d/1Qy387--czMmpXuCZT-xgI5SDjIt24yz_/view?usp=sharing   
-Link to Video on GitHub of data entry, push to gitHub and resulting README.md file. [Link](./Develop/images/hw10LogGen.webm)   Note that this video seems to be too large to play in GitHub, so you will need to download and play from your computer. WindowsMediaPlayer worked for me.   
+Link to logo.svg: https://github.com/msheliga1/uriHW10OOPLogoGenerator/examples/logo.svg
+Link to Video on Google Drive: https://drive.google.com/file/d/1nLvEaC9at3JhJc0knj-ZJ8N_nNKHrIT9/view?usp=sharing  
+Link to Video on GitHub [Link](./examples/hw10LogoGenSheliga.webm)   Note that this video may be too large to play in GitHub, so you will need to download and play from your computer. WindowsMediaPlayer worked for me.   
 
-Link to screenshot of application. ![HW 10 Logo generator input Screenshot](./Develop/images/WorkingScreenshot.PNG)    
-Link to 2nd screenshot of generated README.md file. ![HW 910 Logo generator sample file Screenshot](./Develop/images/ResultsScreenshot.PNG)   
 [Link to Acceptance Criteria ](#acceptance-criteria)   
 
 ## Project Goals     
@@ -51,23 +49,23 @@ Use node, inquirer and Object Oriented Inherited classes  to create an SVG log u
   
 ## Tools and Technologies Used   
     Github - Branches not needed, but could use.  
-        - GitIgnore to keep NPM libraries out of gitHub repo.
-    NPM - Node Package Manager
-        fs - fileSystem   
-        inquirer - Used for prompts (text, list, checkboxes, editor, etc.)
-    Jest - unit testing 
-    SVG - yet another image file format 
+        - GitIgnore to keep NPM libraries out of gitHub repo.  
+    NPM - Node Package Manager  
+        fs - fileSystem    
+        inquirer - Used for prompts (text, list, checkboxes, editor, etc.)   
+    Jest - unit testing  
+    SVG - yet another image file format  
     Agile - Try to assign a little work at a time.   
 
-## Acceptance Criteria
------------------------  
-LOGO generator for simple SVG logos 
-
-Command-line inquirer app for input
-1. Name up to three characters
-2. Text color keyword (OR a hexadecimal number)
-3. Shape: circle, triangle, and square
-4. Shape's color: color keyword (OR a hexadecimal number)
-SVG file is created named `logo.svg`
-Text "Generated logo.svg" is printed in the command line
-`logo.svg` file in a browser - 300x200 pixel image
+## Acceptance Criteria   
+-----------------------   
+LOGO generator for simple SVG logos  
+  
+Command-line inquirer app for input  
+1. Name up to three characters  
+2. Text color keyword (OR a hexadecimal number)  
+3. Shape: circle, triangle, and square  
+4. Shape's color: color keyword (OR a hexadecimal number)  
+SVG file is created named `logo.svg`  
+Text "Generated logo.svg" is printed in the command line  
+`logo.svg` file in a browser - 300x200 pixel image  
