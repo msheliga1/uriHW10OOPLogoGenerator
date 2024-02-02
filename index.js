@@ -51,13 +51,13 @@ function createShapeObject(ans) {
     } else if (ans.shape === "triangle") { 
         shape = new Triangle(ans.initials, ans.color, ans.bgColor);
     } else {
+        console.log("createShapeObject: Unexpected input.shape type of : " + ans.shape);
         // const shape = new Shape();  // Must be what you assigned the require to, NOT necessarily the class name.
-        shape = new Shape(ans.initials, ans.color, ans.bgColor);
+        shape = new Shape(ans.initials, ans.color, ans.bgColor);  // this will return an
     }
     shape.log();
     return shape; 
 }
-
 
 function initQuestions() {
 // TODO: Create an array of questions for user input
@@ -87,3 +87,5 @@ const myEV = (input) => {
 // =================== Begin the App by Calling Init ======================
 // Function call to initialize app
 init();
+
+// module.exports = createShapeObject;  I think this needs to be in a "module"

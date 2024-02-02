@@ -7,7 +7,7 @@
     "lib": "lib"
   },
   "scripts": {
-    "test": "jest"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
@@ -15,8 +15,5 @@
   "dependencies": {
     "email-validator": "^2.0.4",
     "inquirer": "^8.2.4"
-  },
-  "devDependencies": {
-    "jest": "^29.7.0"
   }
 }
